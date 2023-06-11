@@ -1,0 +1,139 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Header styles start */
+
+header {
+    padding: 30px 100px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 28px;
+    text-shadow: 1px 1px 1px #000;
+    list-style-type: none;
+}
+
+.header-item {
+    text-decoration: none;
+    color: #cc1020;
+    transition: .2s linear;
+}
+
+.header-item:hover,
+.header-item:focus,
+.header-item:active {
+    color: #ff912b;
+}
+
+/* Header styles end */
+
+
+/* Main styles start */
+
+.portfolio {
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 42px;
+    text-shadow: 1px 1px 1px #000;
+    color: #cc1020;
+    margin: 10px 100px;
+}
+
+.site-link-img {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px 20px 30px 40px/30px;
+    transition: .3s linear;
+}
+
+.site-link-img:hover,
+.site-link-img:focus,
+.site-link-img:active {
+    scale: 1.02;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.8);
+}
+
+.site-desc {
+    text-align: center;
+    font-size: 24px;
+    color: #cc1020;
+    margin: 15px 0;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* Main styles end */
+
+
+/* Footer styles start */
+
+footer {
+    padding: 30px 100px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 24px;
+    color: #cc1020;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+/* Footer styles end */
+
+
+/* Media styles start */
+
+@media screen and (max-width: 1200px) {
+    .portfolio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio {
+        padding: 10px 20px;
+    }
+
+    header {
+        padding: 30px 20px;
+    }
+
+    .main-title {
+        margin: 10px 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+/* Media styles end */
