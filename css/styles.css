@@ -15,7 +15,7 @@ body {
     font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
-    background: url(../img/bg.jpg) no-repeat center;
+    background: rgb(24, 24, 24);
     background-size: cover;
 }
 
@@ -23,11 +23,15 @@ main {
     flex-grow: 1;
 }
 
+a:hover, a:focus, a:active {
+  color: rgba(190, 190, 190, 0.4);
+}
+
 /* Header styles start */
 
 header {
     padding: 30px 100px;
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(190, 190, 190, 0.4), rgba(24, 24, 24, 0));
 }
 
 .header-menu {
@@ -41,14 +45,14 @@ header {
 
 .header-item {
     text-decoration: none;
-    color: #cc1020;
+    color: #fff;
     transition: .2s linear;
 }
 
 .header-item:hover,
 .header-item:focus,
 .header-item:active {
-    color: #ff912b;
+    color: rgba(190, 190, 190, 0.4);
 }
 
 /* Header styles end */
@@ -66,14 +70,13 @@ header {
 .main-title {
     text-align: center;
     font-size: 42px;
-    text-shadow: 1px 1px 1px #000;
-    color: #cc1020;
+    color: #fff;
     margin: 10px 100px;
 }
 
 .site-link-img {
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid rgba(190, 190, 190, 0.4);
     border-radius: 10px 20px 30px 40px/30px;
     transition: .3s linear;
 }
@@ -82,15 +85,14 @@ header {
 .site-link-img:focus,
 .site-link-img:active {
     scale: 1.02;
-    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 15px rgba(190, 190, 190, 0.4);
 }
 
 .site-desc {
     text-align: center;
     font-size: 24px;
-    color: #cc1020;
+    color: #fff;
     margin: 15px 0;
-    text-shadow: 1px 1px 1px #000;
 }
 
 /* Main styles end */
@@ -109,8 +111,9 @@ header {
 
 .info-text {
     text-decoration: none;
-    color: #cc1020;
+    color: #fff;
     margin-bottom: 10px;
+    transition: .3s linear;
 }
 
 /* Info (about) styles end */
@@ -123,8 +126,8 @@ footer {
     text-align: center;
     text-shadow: 1px 1px 1px #000;
     font-size: 24px;
-    color: #cc1020;
-    background: linear-gradient(to top, rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(24, 24, 24, 0), rgba(190, 190, 190, 0.4));
 }
 
 /* Footer styles end */
